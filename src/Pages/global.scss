@@ -1,0 +1,65 @@
+.container {
+  position: fixed;
+  left: 2rem;
+  top: 30%;
+  z-index: 100;
+
+  @media (max-width: 760px) {
+    top: 50%;
+  }
+  .menu-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #3f3f3f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    background: #171717;
+    .line {
+      width: 60%;
+      background-color: #dee200;
+      height: 3.5px;
+      border-radius: 5px;
+    }
+  }
+
+  .menu-show {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background: #171717d2;
+    border: 0.5px solid rgba(255, 255, 255, 0.247);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 300ms ease;
+    backdrop-filter: blur(5px);
+    ul {
+      li {
+        list-style: none;
+        margin-top: 1rem;
+        a {
+          color: white;
+          font-weight: 300;
+          text-decoration: none;
+          position: relative;
+          padding: 0.3rem;
+        }
+      }
+    }
+  }
+
+  .show {
+    opacity: 1;
+  }
+}
+
+.footer {
+  height: 100px;
+}
